@@ -21,6 +21,12 @@ Modders can also use [Harmony](https://github.com/pardeike/Harmony) to access an
 ## Building
 
 To build the project, you need the .NET SDK. The projects are configured to use the .NET 7.0 SDK, however you can change the version in the corresponding .csproj file [Game.csproj](Game/Game.csproj) and [Mod.csproj](Mod/Mod.csproj).
+Make sure the Mod.csproj links against the Game.dll file that will be generated! You can modify the path to the dll in the [Mod.csproj](Mod/Mod.csproj) file by changing the reference:
+```xml
+<ItemGroup>
+  <Reference Include="..\Game\bin\Debug\net7.0\Game.dll"></Reference>
+</ItemGroup>
+```
 
 You can build and run the projects using the scripts [build.bat](build.bat) (cmd) and [build.ps1](build.ps1) (powershell).
 
