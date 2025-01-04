@@ -1,6 +1,6 @@
 # Mod
 
-The [mod.cs](mod.cs) defines the ```Entry``` class that inherits from the ```Module``` and the ```ModdedBheaviour``` class that inherits from the game's ```Behaviour``` class.
+The [mod.cs](mod.cs) defines the ```Entry``` class that inherits from the ```Module``` and the ```ModdedBehaviour``` class that inherits from the game's ```Behaviour``` class.
 
 ### Entry
 
